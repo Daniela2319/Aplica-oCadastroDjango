@@ -23,4 +23,6 @@ urlpatterns = [
     path('cadastro/', cadastro),
     path('admin/', admin.site.urls),
     path('curso/', include('cursos.urls', namespace='cursos')),
+    path('api-auth/', include('rest_framework.urls')),
+    path('api/', include('rest_api.urls', namespace='api'))
 ]
